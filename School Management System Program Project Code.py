@@ -14,7 +14,7 @@ def management():
         print(" 1.3 To Read Text File ")
         i2=float(input("Enter Sub Menu Code Here → "))
         if i2==1.1:
-            a=open("C:\\Users\\DC\\Desktop\\Python Programs\\txt files(.txt)\\SchoolManagement.txt","w")
+            a=open("C:\\'Enter_your_path_address'\\SchoolManagement.txt","w")
             freq=int(input("set Frequency : "))
             #Frequency to define how many times the execution would take place
             for i in range(freq):
@@ -43,7 +43,7 @@ def management():
                 a.write("\n")
             a.close()
         elif i2==1.2:
-            a=open("C:\\Users\\DC\\Desktop\\Python Programs\\txt files(.txt)\\SchoolManagement.txt","a")
+            a=open("C:\\'Enter_your_path_address'\\SchoolManagement.txt","a")
             freq=int(input("set Frequency : "))
             #Frequency to define how many times the execution would take place
             for i in range(freq):
@@ -73,7 +73,7 @@ def management():
             a.close()
             
         elif i2==1.3:
-            a=open("C:\\Users\\DC\\Desktop\\Python Programs\\txt files(.txt)\\SchoolManagement.txt","w")
+            a=open("C:\\'Enter_your_path_address'\\SchoolManagement.txt","w")
             print("1. To read File in String Format ")
             print("2. To read first Line of The file in the form of List ")
             print("3. To read entire file in the form of List ")
@@ -106,7 +106,7 @@ def management():
         print("\n")
         i3=float(input("Enter Sub Menu Code Here → "))
         if i3==2.1:
-            a=open("C:\\Users\\DC\\Desktop\\Python Programs\\CSV files(.csv)\\SchoolManagement.csv","w")
+            a=open("C:\\'Enter_your_path_address'\\SchoolManagement.csv","w")
             b=csv.writer(a)
             c=['Name','Class','Section','Roll Number','Subject']
             b.writerow(c)
@@ -123,7 +123,7 @@ def management():
 
                           
         elif i3==2.2:
-            a=open("C:\\Users\\DC\\Desktop\\Python Programs\\CSV files(.csv)\\SchoolManagement.csv","a")
+            a=open("C:\\'Enter_your_path_address'\\SchoolManagement.csv","a")
             b=csv.writer(a)
             c=['Name','Class','Section','Roll Number','Subject']
             b.writerow(c)
@@ -139,7 +139,7 @@ def management():
             a.close()
                 
         elif i3==2.3:
-            a=open("C:\\Users\\DC\\Desktop\\Python Programs\\CSV files(.csv)\\SchoolManagement.csv","r")
+            a=open("C:\\'Enter_your_path_address'\\SchoolManagement.csv","r")
             b=csv.reader(a)
             for i in b:
                 print(i)
@@ -159,7 +159,7 @@ def management():
         print(" 3.3 To Read Text File ")
         i5=float(input("Enter Sub Menu Code Here → "))
         if i5==3.1:
-            a=open("C:\\Users\\DC\\Desktop\\Python Programs\\Binary Files(.dat)\\SchoolManagement.dat","wb")
+            a=open("C:\\'Enter_your_path_address'\\SchoolManagement.dat","wb")
             freq=int(input("Set Frequency : "))
             for i in range(freq):
                 nm=input("Enter Name : ")
@@ -172,7 +172,7 @@ def management():
             a.close()
             
         elif i5==3.2:
-            a=open("C:\\Users\\DC\\Desktop\\Python Programs\\Binary Files(.dat)\\SchoolManagement.dat","ab")
+            a=open("'Enter_your_path_address'\\SchoolManagement.dat","ab")
             freq=int(input("Set Frequency : "))
             for i in range(freq):
                 nm=input("Enter Name : ")
@@ -185,7 +185,7 @@ def management():
             a.close()
             
         elif i5==3.3:
-            a=open("C:\\Users\\DC\\Desktop\\Python Programs\\Binary Files(.dat)\\SchoolManagement.dat","rb")
+            a=open("C:\\'Enter_your_path_address'\\SchoolManagement.dat","rb")
             b=pickle.load(a)
             print(b)
             a.close()
